@@ -96,7 +96,7 @@ header.solid.dark{background:rgba(20,26,51,.75);color:var(--cream);box-shadow:0 
 .pol.p3{width:46%;left:30%;top:190px;--r:-2deg;z-index:2}
 .pol:hover{z-index:5}
 .hills{position:relative;z-index:2;margin-top:auto;height:clamp(180px,26vw,320px);pointer-events:none}
-.hills svg{position:absolute;left:0;bottom:0;width:100%;height:100%;will-change:transform}
+.hills svg{position:absolute;left:0;bottom:-62.5%;width:100%;height:162.5%;will-change:transform}
 .chale{position:absolute;z-index:3;right:12%;bottom:clamp(96px,14vw,178px);width:clamp(90px,11vw,150px);will-change:transform}
 .chale .win{animation:glow 3s ease-in-out infinite}
 @keyframes glow{50%{opacity:.75}}
@@ -265,9 +265,9 @@ footer{color:#cfc3dd;padding-block:28px calc(28px + env(safe-area-inset-bottom,0
       </div>
     </div>
     <div class="hills" aria-hidden="true">
-      <svg id="h3" viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill="#b46a8a" opacity=".55" d="M0 150 C120 90 220 120 320 100 C430 78 520 30 640 60 C760 90 820 40 940 50 C1060 60 1140 110 1260 90 C1340 76 1400 96 1440 100 V320 H0Z"/></svg>
-      <svg id="h2" viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill="#6f3f74" opacity=".85" d="M0 200 C160 150 260 190 380 160 C500 130 600 170 720 150 C860 126 960 190 1100 170 C1220 154 1320 130 1440 150 V320 H0Z"/></svg>
-      <svg id="h1" viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill="#3b2a5c" d="M0 250 C200 220 340 260 520 240 C700 220 820 250 980 232 C1140 214 1300 236 1440 226 V320 H0Z"/></svg>
+      <svg id="h3" viewBox="0 0 1440 520" preserveAspectRatio="none"><path fill="#b46a8a" opacity=".55" d="M0 150 C120 90 220 120 320 100 C430 78 520 30 640 60 C760 90 820 40 940 50 C1060 60 1140 110 1260 90 C1340 76 1400 96 1440 100 V520 H0Z"/></svg>
+      <svg id="h2" viewBox="0 0 1440 520" preserveAspectRatio="none"><path fill="#6f3f74" opacity=".85" d="M0 200 C160 150 260 190 380 160 C500 130 600 170 720 150 C860 126 960 190 1100 170 C1220 154 1320 130 1440 150 V520 H0Z"/></svg>
+      <svg id="h1" viewBox="0 0 1440 520" preserveAspectRatio="none"><path fill="#3b2a5c" d="M0 250 C200 220 340 260 520 240 C700 220 820 250 980 232 C1140 214 1300 236 1440 226 V520 H0Z"/></svg>
     </div>
     <svg class="bulbs" id="bulbs" viewBox="0 0 600 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 8 Q150 50 300 18 T600 10" fill="none" stroke="#3b2a5c" stroke-width="2"/><g fill="#ffd77a"><circle cx="40" cy="18" r="5"/><circle cx="100" cy="30" r="5"/><circle cx="160" cy="36" r="5"/><circle cx="220" cy="32" r="5"/><circle cx="280" cy="22" r="5"/><circle cx="340" cy="16" r="5"/><circle cx="400" cy="14" r="5"/><circle cx="460" cy="13" r="5"/><circle cx="520" cy="11" r="5"/><circle cx="580" cy="10" r="5"/></g></svg>
     <svg class="chale" id="chale" viewBox="0 0 120 100" aria-hidden="true"><path d="M10 50 L60 8 L110 50Z" fill="#2a1d40"/><rect x="22" y="48" width="76" height="46" fill="#2a1d40"/><rect class="win" x="36" y="60" width="18" height="16" fill="#ffc861"/><rect class="win" x="66" y="60" width="18" height="16" fill="#ffc861"/><rect x="56" y="74" width="10" height="20" fill="#ffb347" opacity=".8"/><rect x="82" y="18" width="8" height="18" fill="#2a1d40"/></svg>
