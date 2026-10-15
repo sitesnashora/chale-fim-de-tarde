@@ -459,8 +459,7 @@ function update(){
   hdr.classList.toggle('solid',y>20);hdr.classList.toggle('dark',p>.62);
   if(reduce)return;
   pols.forEach(el=>{const s=+el.dataset.speed;el.style.transform=`translateY(${-y*s}px) rotate(calc(var(--r) + ${y*s*.02}deg))`});
-  h3.style.transform=`translateY(${y*.25}px)`;h2.style.transform=`translateY(${y*.15}px)`;h1.style.transform=`translateY(${y*.05}px)`;
-  chale.style.transform=`translateY(${y*.05}px)`;bulbs.style.transform=`translateY(${y*.12}px)`;
+  h3.style.transform=`translateY(${-Math.min(y,600)*.06}px)`;h2.style.transform=`translateY(${-Math.min(y,600)*.03}px)`;
   const r=view.getBoundingClientRect();if(r.bottom>0&&r.top<vh){const q=(r.top+r.height)/(vh+r.height);viewBg.style.transform=`translate3d(0,${(q-.5)*-14}%,0)`}
 }
 let tick=false;addEventListener('scroll',()=>{if(!tick){tick=true;requestAnimationFrame(()=>{update();tick=false})}},{passive:true});
